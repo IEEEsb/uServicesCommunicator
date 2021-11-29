@@ -1,9 +1,9 @@
 const services = require('./services');
 const config = require('./config');
 
-module.exports.init = async (secret, gatewayHost, serviceOptions) => {
+module.exports.init = async (gatewaySecret, gatewayHost, serviceOptions) => {
 	config.set({
-		secret,
+		gatewaySecret,
 		gatewayHost,
 		serviceOptions,
 	});
